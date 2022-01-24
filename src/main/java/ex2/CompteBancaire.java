@@ -11,16 +11,12 @@ public abstract class CompteBancaire {
 	/** solde : solde du compte */
 	protected double solde;
 
-	/** Le type vaut soit CC=Compte courant, ou soit LA=Livret A */
-	protected String type;
-
 	/**
 	 * @param solde
 	 * @param type
 	 */
-	public CompteBancaire(String type, double solde) {
+	public CompteBancaire(double solde) {
 		super();
-		this.type = type;
 		this.solde = solde;
 	}
 
@@ -56,23 +52,5 @@ public abstract class CompteBancaire {
 	 */
 	public void setSolde(double solde) {
 		this.solde = solde;
-	}
-
-	/**
-	 * Getter for type
-	 * 
-	 * @return the type
-	 */
-	public String getType() {
-		return type;
-	}
-
-	/**
-	 * Setter
-	 * 
-	 * @param type the type to set
-	 */
-	public void setType(String type) {
-		this.type = type;
 	}
 }

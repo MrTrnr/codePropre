@@ -10,8 +10,8 @@ public class CompteCourant extends CompteBancaire {
 	/** montant du découvert autorisé */
 	private double decouvert;
 
-	public CompteCourant(String type, double solde, double decouvert) {
-		super(type, solde);
+	public CompteCourant(double solde, double decouvert) {
+		super(solde);
 		this.decouvert = decouvert;
 	}
 
